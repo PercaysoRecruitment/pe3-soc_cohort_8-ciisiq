@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function Search() {
+export default function Search({ onChangeNews }) {
   return (
     <div>
-      <h1>This is the search Bar</h1>
+      <input
+        type="text"
+        className="input"
+        placeholder="Enter a keyword"
+        onChange={onChangeNews}
+      />
     </div>
   );
 }
