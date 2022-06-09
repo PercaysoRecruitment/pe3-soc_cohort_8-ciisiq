@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+.search-container {
+  .box {
+    .input {
+      width: 900px;
+      height: 50px;
+      border: none;
+      border: 1px solid $dark-gray-bg;
+      //   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 10px 10px 10px 10px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$main-black: #010103;
+$main-red: #ff5a5f;
+$white-bg: #ffffff;
+$gray-bg: #f0f4f7;
+$dark-gray-bg: #b5c2c9;
+
+//breakpoints
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

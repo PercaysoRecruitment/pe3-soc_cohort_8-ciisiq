@@ -1,5 +1,5 @@
 import Main from "../pages/main/Main";
-import "./App.css";
+import "./App.scss";
 import Header from "../pages/header/Header";
 import Display from "../pages/display/Display";
 

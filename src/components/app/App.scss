@@ -1,0 +1,25 @@
+.app {
+  height: 100vh;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px); //for not be the role page
+    background-color: grey;
+    position: relative;
+    top: 70px; //for to start from here
+    scroll-behavior: smooth; //when you click on the link will go to the page smooth
+    scroll-snap-type: y mandatory; //make the scrollbar to go the next page quickler
+    scrollbar-width: none; //Hidden the scrollbar in firefox
+    //Hidden the scrollbar chrome
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // size for all components inside the sections
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start; //make the scrollbar to go the next page quickler
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../../global.scss";
+
+.home-container {
+  background-color: $white-bg;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+
+  //   border-bottom: 50px solid $main-red;
+  //   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  .wrapper-input {
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 88%;
+
+    .wrap-both {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .wrapper-container {
+    background-color: $gray-bg;
+    height: 80%;
+    width: 100%;
+
+    .right {
+      flex: 1;
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+
+      h1 {
+        font-size: 96px;
+      }
+
+      .wrap-p {
+        display: flex;
+
+        .p1 {
+          font-size: 48px;
+          color: $main-red;
+          padding-right: 1rem;
+          padding: 0;
+          margin: 0;
+        }
+
+        .p2 {
+          font-size: 48px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    .left {
+      flex: 1;
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+      height: 100%;
+
+      .wrapper-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 1rem;
+        width: 70%;
+        height: 50%;
+
+        h1 {
+          color: $main-red;
+          font-size: 96px;
+          //   border: 2px solid black;
+        }
+
+        h3 {
+          font-size: 48px;
+          margin-top: 0%;
+        }
+      }
+    }
+  }
+}
