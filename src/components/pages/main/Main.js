@@ -25,6 +25,8 @@ export default function Main() {
     fetchNews();
   }, []);
 
+  console.log(news);
+
   return (
     <div>
       <h1>This is the Main</h1>
