@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Search from "../search/Search";
-import Button from "../button/Button";
+import Search from "../../search/Search";
+import Button from "../../button/Button";
 
 export default function Main() {
   const [news, setNews] = useState();

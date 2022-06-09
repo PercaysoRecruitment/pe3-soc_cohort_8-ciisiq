@@ -1,0 +1,52 @@
+💠💠💠 App Structure 💠💠💠
+
+<App>
+    <Header>
+        <Logo>
+        <Links>
+    <Main/Home>
+        <Home text>
+        <Search Bar>
+        <Button for to find>
+    <Display>
+        <Title P>
+        <List of Cards found>
+
+📌📌📌 TO DO 📌📌📌
+
+09/06
+- Create components [DONE 🆗]
+    - Button
+        - Create a button to triggler the fetch [DONE 🆗]
+    - Search
+        - Create a input to hold user keywords [DONE 🆗]
+    - Cards
+        - Create a function(map) with the information that I want to show
+        (Image / Title /description )
+    
+
+- Create Pages [DONE 🆗]
+    - Header
+        - Create the links to others pages (router)
+    - Home
+     - do the fetch request 
+     - Pass in the button and input(searchbar)
+    - Display
+    - About
+    - LatestNews
+
+10/06
+- Make the testing 
+    (unite test and integration test)
+- Make the documetation on readme
+    (Framework used, library used, deployment 
+     link, design choices)
+
+▶️▶️▶️ EXTRA 
+    - Make the dark mode
+    - More acessibility 
+    - Typescript version
+    - Translation page option
+    - Filter option
+    - Responsive (mobile and other breakpoints)
+    - Carrosel with the lastest news (to make mo atractive website)
