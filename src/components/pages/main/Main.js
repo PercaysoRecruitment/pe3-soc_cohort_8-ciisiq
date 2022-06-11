@@ -14,16 +14,16 @@ export default function Main() {
     setSearch(e.target.value);
   };
 
-  async function fetchNews(theNews) {
+  async function fetchNews() {
     const response = await fetch(URL);
     const data = response.json();
-    theNews = data;
-    console.log(theNews);
-    setNews(theNews);
+    console.log(data);
+    setNews(data);
   }
 
   useEffect(() => {
     fetchNews();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   console.log(news);
