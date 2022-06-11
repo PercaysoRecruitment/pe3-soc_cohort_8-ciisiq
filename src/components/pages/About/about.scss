@@ -1,0 +1,77 @@
+@import "../../../global.scss";
+
+.about-page {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+
+  .wrap-about {
+    background-color: $gray-bg;
+    height: 100%;
+    width: 100%;
+
+    .wrap-titles {
+      background-color: $gray-bg;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+      }
+
+      h2 {
+        color: $main-red;
+      }
+    }
+
+    .wrap-description {
+      height: 50%;
+      background-color: $white-bg;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        max-width: 50%;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .part2 {
+        margin-top: 1rem;
+        color: $dark-gray-bg;
+        font-weight: 200;
+      }
+
+      .part3 {
+        margin-top: 1rem;
+      }
+
+      .wrap-links {
+        display: flex;
+        margin-top: 2rem;
+
+        a {
+          margin-right: 1rem;
+          text-decoration: none;
+          font-weight: 600;
+          color: $main-black;
+          font-size: 1.5rem;
+
+          &:hover {
+            color: $main-red;
+            transform: scale(2rem);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import "./App.scss";
 import { useState } from "react";
+
 import Header from "../pages/header/Header";
 import Display from "../pages/display/Display";
 import Home from "../pages/home/Home";

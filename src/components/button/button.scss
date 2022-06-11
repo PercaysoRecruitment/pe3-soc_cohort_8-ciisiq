@@ -14,4 +14,8 @@
   &:hover {
     background-color: $main-black;
   }
+
+  &:active {
+    transform: translateY(2px);
+  }
 }
