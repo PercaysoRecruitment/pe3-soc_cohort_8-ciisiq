@@ -1,33 +1,9 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import Search from "../../search/Search";
 import Button from "../../button/Button";
 import "./main.scss";
 
-export default function Main() {
-  const [news, setNews] = useState();
-  const [search, setSearch] = useState("");
-
-  const URL = `https://gnews.io/api/v4/search?q=${search}&token=70e7d51750cb67d8b6fce9db19fc2953`;
-
-  const handleUserSearch = (e) => {
-    setSearch(e.target.value);
-  };
-
-  async function fetchNews() {
-    const response = await fetch(URL);
-    const data = response.json();
-    console.log(data);
-    setNews(data);
-  }
-
-  useEffect(() => {
-    fetchNews();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  console.log(news);
-
+export default function Main({ fetchPropsNews, handleSearch }) {
   return (
     <div className="home-container">
       <div className="wrapper-container">
@@ -49,8 +25,8 @@ export default function Main() {
       </div>
       <div className="wrapper-input">
         <div className="wrap-both">
-          <Search className="srch" onChangeNews={handleUserSearch} />
-          <Button className="btn" click={() => fetchNews()} />
+          <Search className="srch" onChangeNews={handleSearch} />
+          <Button className="btn" click={fetchPropsNews} />
         </div>
       </div>
     </div>

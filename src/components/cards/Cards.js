@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function Cards() {
+export default function Cards({ propsNews }) {
   return (
-    <div>
-      <h1>This is the Cards</h1>
+    <div className="cards-container">
+      <img alt={propsNews.title} src={propsNews.image} />
+      <h4>{propsNews.title}</h4>
+      <p>{propsNews.description}</p>
+      <p>{propsNews.url}</p>
     </div>
   );
 }
