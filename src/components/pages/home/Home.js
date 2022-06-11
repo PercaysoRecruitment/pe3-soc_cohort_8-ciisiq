@@ -3,7 +3,7 @@ import Search from "../../search/Search";
 import Button from "../../button/Button";
 import "./main.scss";
 
-export default function Main({ fetchPropsNews, handleSearch }) {
+export default function Home({ fetchPropsNews, handleSearch }) {
   return (
     <div className="home-container">
       <div className="wrapper-container">

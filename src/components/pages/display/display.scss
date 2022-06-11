@@ -1,0 +1,59 @@
+@import "../../../global.scss";
+
+.news-display {
+  background-color: $white-bg;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  gap: 2rem;
+  flex-direction: column;
+
+  .title-container {
+    background-color: $gray-bg;
+    font-weight: 700;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 0.8rem;
+
+    .styleCard {
+      box-shadow: 0 5px 6px #ccc;
+      color: $main-black;
+      margin: 12px 0px;
+      padding: 4px 16px 20px 16px;
+      align-items: center;
+      justify-content: center;
+      border: 0.1rem solid $gray-bg;
+
+      .styleImage {
+        background-color: lightGray;
+        max-height: 140px;
+        overflow: hidden;
+      }
+
+      .styleCardTitle {
+        font-weight: 600;
+        margin: 12px 0px 0px 0px;
+        text-align: left;
+      }
+
+      .styleDescription {
+        font-size: 14;
+        margin: 8px 0 0 0;
+        text-align: left;
+        color: #757070;
+        display: block;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-bottom: 1rem;
+      }
+
+      .styleLink {
+        text-decoration: none;
+        color: $main-red;
+        font-weight: 700;
+      }
+    }
+  }
+}
