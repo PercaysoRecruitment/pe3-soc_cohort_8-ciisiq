@@ -1,5 +1,5 @@
-import TopNews from "../components/pages/TopNews/TopNews.js";
+import DisplayNews from "../components/pages/displayNews/DisplayNews.js";
 
 export default function NewsLink() {
-  return <TopNews />;
+  return <DisplayNews />;
 }

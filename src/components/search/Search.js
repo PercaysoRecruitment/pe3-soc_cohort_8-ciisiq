@@ -10,7 +10,7 @@ export default function Search({ onChangeNews, click }) {
           <input
             type="text"
             className="input"
-            placeholder="Enter a keyword"
+            placeholder="Enter a keyword e.g.: Google"
             onChange={onChangeNews}
           />
           {/* <button className="btn2" onClick={click}>

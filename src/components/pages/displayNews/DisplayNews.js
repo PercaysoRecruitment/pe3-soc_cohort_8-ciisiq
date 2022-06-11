@@ -1,12 +1,12 @@
 import React from "react";
-import "./display.scss";
+import "./displayNews.scss";
 // import { data } from "../../../data";
 
-export default function Display({ propsNews }) {
+export default function DisplayNews({ propsNews }) {
   return (
-    <div className="news-display">
+    <div className="news-display" id="news">
       <div className="title-container">
-        <h2>The news</h2>
+        <h2>Check the news</h2>
       </div>
       <div className="card-container">
         {/* {data.map((d) => (

@@ -22,23 +22,23 @@
         - Create a input to hold user keywords [DONE 🆗]
     - Cards
         - Create a function(map) with the information that I want to show
-        (Image / Title /description )
+        (Image / Title /description ) [DONE 🆗]
     
 
 - Create Pages [DONE 🆗]
     - Header
-        - Create the links to others pages (router)
-    - Home
-     - do the fetch request 
-     - Pass in the button and input(searchbar)
-    - Display
-    - About
-    - LatestNews
+        - Create the links to others pages (router) [DONE 🆗]
+    - Home [DONE 🆗]
+     - do the fetch request  [DONE 🆗]
+     - Pass in the button and input(searchbar) [DONE 🆗]
+    - Display [DONE 🆗]
+    - About [DONE 🆗]
+    - News
 
 10/06
 - Make the testing 
     (unite test and integration test)
-- Make the documetation on readme
+- Make the documetation on readme [DONE 🆗]
     (Framework used, library used, deployment 
      link, design choices)
 

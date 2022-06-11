@@ -14,7 +14,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="home" element={<App />} />
         <Route path="about" element={<AboutLink />} />
-        <Route path="topNews" element={<NewsLink />} />
+        <Route path="news" element={<NewsLink />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,9 +1,8 @@
 import "./App.scss";
 import { useState } from "react";
-
 import Header from "../pages/header/Header";
-import Display from "../pages/display/Display";
 import Home from "../pages/home/Home";
+import DisplayNews from "../pages/displayNews/DisplayNews";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -45,7 +44,7 @@ function App() {
         fetchPropsNews={() => fetchNews()}
         handleSearch={handleUserSearch}
       />
-      <Display key={news.id} propsNews={news} />
+      <DisplayNews key={news.id} propsNews={news} />
     </div>
   );
 }
