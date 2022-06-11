@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "../../search/Search";
 import Button from "../../button/Button";
-import "./main.scss";
+import "./home.scss";
 
 export default function Home({ fetchPropsNews, handleSearch }) {
   return (
@@ -25,7 +25,11 @@ export default function Home({ fetchPropsNews, handleSearch }) {
       </div>
       <div className="wrapper-input">
         <div className="wrap-both">
-          <Search className="srch" onChangeNews={handleSearch} />
+          <Search
+            className="srch"
+            click={fetchPropsNews}
+            onChangeNews={handleSearch}
+          />
           <Button className="btn" click={fetchPropsNews} />
         </div>
       </div>

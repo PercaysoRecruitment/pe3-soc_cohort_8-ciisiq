@@ -1,5 +1,5 @@
 import "./App.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "../pages/header/Header";
 import Display from "../pages/display/Display";
 import Home from "../pages/home/Home";
@@ -8,7 +8,10 @@ function App() {
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
 
+  // let TOKEN = process.env.TOKEN;
   const URL = `https://gnews.io/api/v4/search?q=${search}&token=70e7d51750cb67d8b6fce9db19fc2953`;
+
+  // const URL = `https://gnews.io/api/v4/search?q=${search}&token=${TOKEN}`;
 
   const handleUserSearch = (e) => {
     setSearch(e.target.value);

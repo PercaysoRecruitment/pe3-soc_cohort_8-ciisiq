@@ -5,41 +5,44 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  gap: 2rem;
+  gap: 1rem;
   flex-direction: column;
 
-  .title-container {
-    background-color: $gray-bg;
-    font-weight: 700;
-  }
-
   .card-container {
+    background-color: $white-bg;
+    padding-left: 1rem;
     display: flex;
-    gap: 0.8rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     .styleCard {
-      box-shadow: 0 5px 6px #ccc;
+      width: 100%;
+      max-width: 30%;
+      background-color: $white-bg;
+      padding: 8px;
       color: $main-black;
       margin: 12px 0px;
       padding: 4px 16px 20px 16px;
-      align-items: center;
-      justify-content: center;
       border: 0.1rem solid $gray-bg;
+      box-shadow: 0 5px 6px rgb(118, 117, 117);
 
       .styleImage {
-        background-color: lightGray;
-        max-height: 140px;
+        width: 100%;
+        height: 214px;
+        object-fit: cover;
         overflow: hidden;
+        padding-top: 0.6rem;
       }
 
       .styleCardTitle {
+        font-size: 18px;
         font-weight: 600;
         margin: 12px 0px 0px 0px;
         text-align: left;
       }
 
       .styleDescription {
-        font-size: 14;
+        font-size: 14px;
         margin: 8px 0 0 0;
         text-align: left;
         color: #757070;
@@ -55,5 +58,15 @@
         font-weight: 700;
       }
     }
+  }
+
+  .title-container {
+    background-color: $gray-bg;
+    font-weight: 700;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1rem;
   }
 }

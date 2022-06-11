@@ -1,6 +1,6 @@
 import React from "react";
-import { data } from "../../../data";
 import "./display.scss";
+import { data } from "../../../data";
 
 export default function Display({ propsNews }) {
   return (
@@ -9,8 +9,8 @@ export default function Display({ propsNews }) {
         <h2>The news</h2>
       </div>
       <div className="card-container">
-        {propsNews.map((d) => (
-          <div className="styleCard">
+        {data.map((d) => (
+          <div key={d.id} className="styleCard">
             <img className="styleImage" alt={d.title} src={d.image} />
             <h4 className="styleCardTitle">{d.title}</h4>
             <p className="styleDescription">{d.description}</p>
@@ -24,6 +24,7 @@ export default function Display({ propsNews }) {
             </a>
           </div>
         ))}
+        ;
       </div>
     </div>
   );

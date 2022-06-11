@@ -8,6 +8,7 @@
   justify-content: center;
   height: 100vh;
   position: relative;
+  z-index: 1;
 
   //   border-bottom: 50px solid $main-red;
   //   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -16,7 +17,7 @@
     width: 100%;
     position: absolute;
     z-index: 4;
-    top: 88%;
+    top: 86%;
 
     .wrap-both {
       display: flex;
