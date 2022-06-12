@@ -20,6 +20,7 @@ Instructions on how to use them in your own application are linked below.
 | React Dom             | [https://reactrouter.com/docs/en/v6]                            |
 | Netifly               | [https://www.netlify.com/]                                      |
 | API used              | [https://gnews.io/?ref=apilist.fun]                             |
+| Cypress               | [https://www.cypress.io/]                                       |
 
 ## Installation
 
@@ -32,10 +33,18 @@ npm i
 npm start
 ```
 
-Testing
+For to see the Test with React-testing library
+Used this for to test the compents
 
 ```sh
 npm run test
+```
+
+For to see the Test with cypress
+Used this for to test E2E
+
+```sh
+npm run cypress:open
 ```
 
 ---
