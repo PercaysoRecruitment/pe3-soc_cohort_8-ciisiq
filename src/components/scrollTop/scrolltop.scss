@@ -6,4 +6,13 @@
   border: none;
   cursor: pointer;
   z-index: 6;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 1.2rem;
+
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

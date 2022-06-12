@@ -1,9 +1,5 @@
 .App {
-  height: 100vh;
-  scroll-snap-align: start;
-  width: 100%;
-  height: calc(100vh - 70px); //for not be the role page
-  position: relative;
+  // height: 100vh;
   top: 70px; //for to start from here
 
   scroll-behavior: smooth; //when you click on the link will go to the page smooth

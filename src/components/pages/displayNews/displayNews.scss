@@ -4,8 +4,10 @@
   background-color: $white-bg;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 70px);
   flex-direction: column;
+  position: relative;
+  top: 70px;
 
   .card-container {
     background-color: $white-bg;
@@ -70,12 +72,13 @@
   .title-container {
     background-color: $gray-bg;
     font-weight: 700;
+    font-size: 1rem;
     height: 100px;
-    max-height: 100px;
     display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 1rem;
+    width: 100%;
 
     @include mobile {
       font-size: 0.7rem;

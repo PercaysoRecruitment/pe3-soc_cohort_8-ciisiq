@@ -5,7 +5,9 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 70px);
+  position: relative;
+  top: 70px;
 
   .wrap-about {
     background-color: $gray-bg;
