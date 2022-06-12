@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./scrolltop.scss";
 
+//this is the component that make the button when the page is long and needs comeback to the top
 export default function ScrollTop() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,8 +14,7 @@ export default function ScrollTop() {
     }
   };
 
-  // Set the top cordinate to 0
-  // make scrolling smooth
+  // Set the top cordinate to 0 and make scrolling smooth
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

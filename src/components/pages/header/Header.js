@@ -2,6 +2,7 @@ import React from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
 
+//Header is fixed one the top of the page
 export default function Header() {
   return (
     <div className="topBar">

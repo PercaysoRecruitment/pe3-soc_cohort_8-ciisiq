@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header/Header";
 import "./about.scss";
 
+//This is just a page for to show the user what about this web page is.
 export default function about() {
   return (
     <div className="about-page" id="about">

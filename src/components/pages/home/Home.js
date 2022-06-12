@@ -3,7 +3,9 @@ import Search from "../../search/Search";
 import Button from "../../button/Button";
 import "./home.scss";
 
-export default function Home({ fetchPropsNews, handleSearch }) {
+//Here is the first page the user will see and also de components input and search button
+// I passed the fuctions from the APP because I need to use here and also pass to the next page
+export default function Home({ fetchPropsNews, handleSearch, handleClick }) {
   return (
     <div className="home-container">
       <div className="wrapper-container">
@@ -30,7 +32,7 @@ export default function Home({ fetchPropsNews, handleSearch }) {
             click={fetchPropsNews}
             onChangeNews={handleSearch}
           />
-          <Button className="btn" click={fetchPropsNews} />
+          <Button className="btn" click={handleClick} />
         </div>
       </div>
     </div>

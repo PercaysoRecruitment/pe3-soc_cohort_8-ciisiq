@@ -5,45 +5,46 @@ import Home from "../pages/home/Home";
 import DisplayNews from "../pages/displayNews/DisplayNews";
 import ScrollTop from "../scrollTop/ScrollTop";
 
+//here the main fuctions will be
 function App() {
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
 
-  // let TOKEN = process.env.TOKEN;
   const URL = `https://gnews.io/api/v4/search?q=${search}&token=70e7d51750cb67d8b6fce9db19fc2953`;
 
-  // const URL = `https://gnews.io/api/v4/search?q=${search}&token=${TOKEN}`;
-
+  //function to handle user value
   const handleUserSearch = (e) => {
     setSearch(e.target.value);
   };
 
-  function fetchNews() {
-    //I tried to use asycn function but i got an promisse that don't alowed me to get the data.
-    // const response = await fetch(URL);
-    // const data = response.json();
-    // setNews(data);
+  //function to for to check if the input will not be empty
+  const handleClick = (e) => {
+    e.preventDefault();
 
+    if (search.trim().length !== 0) {
+      fetchNews();
+    } else {
+      alert("Input value is empty, please insert a keyword");
+    }
+  };
+
+  //Conectando front-end com Back-end
+  function fetchNews() {
     fetch(URL)
-      //this was the solution for to get the data from the API
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
         setNews(json.articles);
       });
   }
 
-  // useEffect(() => {
-  //   fetchNews();
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
-
+  //On home page I passed the fuctions that I need to use in another components
   return (
     <div className="App">
       <Header />
       <Home
         fetchPropsNews={() => fetchNews()}
         handleSearch={handleUserSearch}
+        handleClick={handleClick}
       />
       <DisplayNews key={news.id} propsNews={news} />
       <ScrollTop />

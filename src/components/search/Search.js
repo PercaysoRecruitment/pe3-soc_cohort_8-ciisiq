@@ -1,8 +1,9 @@
 import React from "react";
-// import Button from "../button/Button";
 import "./search.scss";
 
-export default function Search({ onChangeNews, click }) {
+//This is a component that user will search the news, I tried to put the button inside
+//but I was not able to do it in time.
+export default function Search({ onChangeNews }) {
   return (
     <div className="search-container">
       <form className="box">
@@ -13,9 +14,6 @@ export default function Search({ onChangeNews, click }) {
             placeholder="Enter a keyword e.g.: Google"
             onChange={onChangeNews}
           />
-          {/* <button className="btn2" onClick={click}>
-            Search
-          </button> */}
         </div>
       </form>
     </div>
