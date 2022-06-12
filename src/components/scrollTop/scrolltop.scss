@@ -1,0 +1,9 @@
+@import "../../global.scss";
+
+.top-btn {
+  background-color: $main-red;
+  color: $white-bg;
+  border: none;
+  cursor: pointer;
+  z-index: 6;
+}

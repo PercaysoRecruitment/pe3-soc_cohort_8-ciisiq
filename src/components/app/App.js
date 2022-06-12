@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "../pages/header/Header";
 import Home from "../pages/home/Home";
 import DisplayNews from "../pages/displayNews/DisplayNews";
+import ScrollTop from "../scrollTop/ScrollTop";
 
 function App() {
   const [news, setNews] = useState([]);
@@ -45,6 +46,7 @@ function App() {
         handleSearch={handleUserSearch}
       />
       <DisplayNews key={news.id} propsNews={news} />
+      <ScrollTop />
     </div>
   );
 }

@@ -2,10 +2,6 @@
 
 .home-container {
   background-color: $white-bg;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -25,8 +21,14 @@
 
   .wrapper-container {
     background-color: $gray-bg;
-    height: 80%;
+    height: 90%;
     width: 100%;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     .right {
       flex: 1;
@@ -40,6 +42,10 @@
 
       h1 {
         font-size: 96px;
+
+        @include mobile {
+          font-size: 36px;
+        }
       }
 
       .wrap-p {
@@ -51,12 +57,20 @@
           padding-right: 1rem;
           padding: 0;
           margin: 0;
+
+          @include mobile {
+            font-size: 24px;
+          }
         }
 
         .p2 {
           font-size: 48px;
           padding: 0;
           margin-left: 0.5rem;
+
+          @include mobile {
+            font-size: 24px;
+          }
         }
       }
     }
@@ -83,11 +97,19 @@
         h1 {
           color: $main-red;
           font-size: 96px;
+
+          @include mobile {
+            font-size: 24px;
+          }
         }
 
         h3 {
           font-size: 48px;
           margin-top: 0%;
+
+          @include mobile {
+            font-size: 24px;
+          }
         }
       }
     }

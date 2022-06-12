@@ -5,7 +5,8 @@
 ▶️ Demo : [Check here](https://news-percayso-test.netlify.app/)
 ▶️ Figma : [Check here](https://www.figma.com/file/NQaHoISOcFI2EvePRxW1at/Percayso-News?node-id=17%3A2)
 
-This app was developed using the react framework, check below the versions used
+This app was developed using the react framework, check below the versions used<br><br>
+❗❗ Note: This API only acept 100 request per day [Free version] ❗❗<br><br>
 
 ## Plugins
 
@@ -26,7 +27,7 @@ Instructions on how to use them in your own application are linked below.
 
 News app used [Node.js](https://nodejs.org/) v16.13.0
 
-Install the dependencies for to start the server.
+Install the dependencies for to start the server locally.
 
 ```sh
 npm i
