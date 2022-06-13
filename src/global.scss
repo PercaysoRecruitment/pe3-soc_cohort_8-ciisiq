@@ -6,9 +6,16 @@ $dark-gray-bg: #4a5257;
 
 //breakpoints
 $width: 768px;
+$screen-lg-min: 1820px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin lgScreen {
+  @media (max-width: #{$screen-lg-min}) {
     @content;
   }
 }
