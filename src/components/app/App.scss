@@ -1,0 +1,12 @@
+.App {
+  // height: 100vh;
+  top: 70px; //for to start from here
+
+  scroll-behavior: smooth; //when you click on the link will go to the page smooth
+  scroll-snap-type: y mandatory; //make the scrollbar to go the next page quickler
+  scrollbar-width: none; //Hidden the scrollbar in firefox
+  //Hidden the scrollbar chrome
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.btn {
+  background-color: $main-red;
+  border: none;
+  color: $white-bg;
+  width: 150px;
+  height: 46px;
+  z-index: 6;
+  font-size: 20px;
+  cursor: pointer;
+
+  @include mobile {
+    position: absolute;
+    right: 2.5rem;
+    top: 0.5rem;
+    font-size: 0.9rem;
+    width: 60px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: $main-black;
+  }
+}

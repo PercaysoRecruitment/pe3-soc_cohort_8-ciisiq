@@ -1,0 +1,99 @@
+@import "../../../global.scss";
+
+.about-page {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  position: relative;
+  top: 70px;
+
+  .wrap-about {
+    background-color: $gray-bg;
+    height: 100%;
+    width: 100%;
+
+    .wrap-titles {
+      background-color: $gray-bg;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+
+        @include mobile {
+          font-size: 2rem;
+        }
+      }
+
+      h2 {
+        color: $main-red;
+
+        @include mobile {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    .wrap-description {
+      height: 50%;
+
+      background-color: $white-bg;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        max-width: 60%;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+
+        @include mobile {
+          font-size: 1.2rem;
+          max-width: 80%;
+        }
+      }
+
+      .part2 {
+        margin-top: 1rem;
+        color: $dark-gray-bg;
+        font-weight: 200;
+      }
+
+      .part3 {
+        margin-top: 1rem;
+      }
+
+      .wrap-links {
+        display: flex;
+        margin-top: 2rem;
+
+        a {
+          margin-right: 1rem;
+          text-decoration: none;
+          font-weight: 600;
+          color: $main-black;
+          font-size: 1.5rem;
+
+          @include mobile {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+          }
+
+          &:hover {
+            color: $main-red;
+            transform: scale(2rem);
+          }
+        }
+      }
+    }
+  }
+}

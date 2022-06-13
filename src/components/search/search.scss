@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.search-container {
+  .box {
+    .wrap-form {
+      position: relative;
+
+      .input {
+        width: 900px;
+        height: 50px;
+        border: 1px solid $dark-gray-bg;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        z-index: 4;
+        position: relative;
+
+        @include mobile {
+          font-size: 14px;
+          width: 300px;
+          height: 20px;
+        }
+      }
+
+      // .btn {
+      //   position: absolute;
+      //   right: 0.5rem;
+      //   top: 0.9rem;
+
+      //   @include mobile {
+      //     right: 0.8rem;
+      //     top: 0.5rem;
+      //     font-size: 0.9rem;
+      //     width: 60px;
+      //     height: 25px;
+      //   }
+      // }
+    }
+  }
+}
