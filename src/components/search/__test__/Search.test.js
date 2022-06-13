@@ -20,3 +20,9 @@ it('Should not have a query with name "panda" on the document', () => {
   const inputElement = screen.queryByText(/panda/i);
   expect(inputElement).not.toBeInTheDocument();
 });
+
+test("Should be visable to the user", () => {
+  render(<Search />);
+  const LinksElement = screen.getByTestId("input");
+  expect(LinksElement).toBeVisible();
+});

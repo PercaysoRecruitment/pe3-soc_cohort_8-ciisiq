@@ -9,9 +9,15 @@ export default function Header() {
       <div className="wrapper">
         <div className="links-wrapper">
           <nav className="container">
-            <Link to="/Home">Home</Link>
-            <a href="#news">News</a>
-            <Link to="/about">About</Link>
+            <Link data-testid="link" to="/Home">
+              Home
+            </Link>
+            <a data-testid="link" href="#news">
+              News
+            </a>
+            <Link data-testid="link" to="/about">
+              About
+            </Link>
           </nav>
         </div>
       </div>
