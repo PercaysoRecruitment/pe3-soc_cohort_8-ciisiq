@@ -9,7 +9,7 @@
   top: 70px;
 
   @include mobile {
-    height: calc(50vh - 70px);
+    height: calc(60vh - 70px);
   }
 
   .wrapper-input {
@@ -119,7 +119,7 @@
           font-size: 96px;
 
           @include mobile {
-            font-size: 64px;
+            font-size: 60px;
             height: 100%;
           }
         }

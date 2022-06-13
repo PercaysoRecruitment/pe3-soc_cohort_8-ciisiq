@@ -2,10 +2,10 @@
 
 ## News app
 
-▶️ Demo : [Check here](https://news-percayso-test.netlify.app/)
-▶️ Figma : [Check here](https://www.figma.com/file/NQaHoISOcFI2EvePRxW1at/Percayso-News?node-id=17%3A2)
+▶️ Online App : [Check here](https://news-percayso-test.netlify.app/)<br>
+▶️ Style Figma : [Check here](https://www.figma.com/file/NQaHoISOcFI2EvePRxW1at/Percayso-News?node-id=17%3A2)<br><br>
 
-This app was developed using the react framework, check below the versions used<br><br>
+This app was developed using the react framework, check below the versions used<br>
 ❗❗ Note: This API only acept 100 request per day [Free version] ❗❗<br><br>
 
 ## Plugins
@@ -37,14 +37,14 @@ npm start
 ```
 
 For to see the Test with React-testing library
-Used this for to test the compents
+Used this for to test the components
 
 ```sh
 npm run test
 ```
 
 For to see the Test with cypress
-Used this for to test E2E
+Used this for to do E2E testing
 
 ```sh
 npm run cypress:open
