@@ -9,6 +9,7 @@ export default function Search({ onChangeNews }) {
       <form className="box">
         <div className="wrap-form">
           <input
+            data-testid="input"
             type="text"
             className="input"
             placeholder="Enter a keyword e.g.: Google"

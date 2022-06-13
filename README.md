@@ -27,6 +27,8 @@ Instructions on how to use them in your own application are linked below.
 
 News app used [Node.js](https://nodejs.org/) v16.13.0
 
+for this project to work locally you need to create a .env folder and put your token inside with the variable name "REACT_APP_API_KEY" [.env folder](https://github.com/motdotla/dotenv)
+
 Install the dependencies for to start the server locally.
 
 ```sh

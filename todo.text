@@ -2,15 +2,14 @@
 
 <App>
     <Header>
-        <Logo>
         <Links>
-    <Main/Home>
+    <Home>
         <Home text>
         <Search Bar>
         <Button for to find>
     <Display>
         <Title P>
-        <List of Cards found>
+        <List of Cards with the news found>
 
 📌📌📌 TO DO 📌📌📌
 

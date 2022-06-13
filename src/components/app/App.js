@@ -5,12 +5,14 @@ import Home from "../pages/home/Home";
 import DisplayNews from "../pages/displayNews/DisplayNews";
 import ScrollTop from "../scrollTop/ScrollTop";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 //here the main fuctions will be
 function App() {
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
 
-  const URL = `https://gnews.io/api/v4/search?q=${search}&token=70e7d51750cb67d8b6fce9db19fc2953`;
+  const URL = `https://gnews.io/api/v4/search?q=${search}&token=${API_KEY}`;
 
   //function to handle user value
   const handleUserSearch = (e) => {
