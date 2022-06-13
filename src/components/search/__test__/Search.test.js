@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import Search from "../Search";
 
 test("Should have an input with that placeholder", () => {
@@ -23,6 +23,13 @@ it('Should not have a query with name "panda" on the document', () => {
 
 test("Should be visable to the user", () => {
   render(<Search />);
-  const LinksElement = screen.getByTestId("input");
-  expect(LinksElement).toBeVisible();
+  const inputElement = screen.getByTestId("input");
+  expect(inputElement).toBeVisible();
+});
+
+test("Should change when type something", () => {
+  render(<Search />);
+  const inputElement = screen.getByTestId("input");
+  fireEvent.change(inputElement, { target: { value: "Panda" } });
+  expect(inputElement.value).toBe("Panda");
 });

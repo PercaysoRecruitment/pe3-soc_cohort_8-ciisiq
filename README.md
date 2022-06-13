@@ -36,15 +36,17 @@ npm i
 npm start
 ```
 
-For to see the Test with React-testing library
-Used this for to test the components
+## Testing
+
+For to see the Test with React-testing library<br>
+I Used this for to test the components (unit test)
 
 ```sh
 npm run test
 ```
 
-For to see the Test with cypress
-Used this for to do E2E testing
+For to see the Test with cypress<br>
+I Used this for to do E2E testing
 
 ```sh
 npm run cypress:open
