@@ -48,7 +48,7 @@ function App() {
         handleSearch={handleUserSearch}
         handleClick={handleClick}
       />
-      <DisplayNews key={news.id} propsNews={news} />
+      <DisplayNews propsNews={news} />
       <ScrollTop />
     </div>
   );
